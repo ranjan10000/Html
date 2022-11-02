@@ -1,0 +1,45 @@
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></SCRIPT>
+	<script type="text/javascript" language="javascript"> 
+
+$(document).ready(function(){
+
+$("#submit").click(function(){
+
+var op = "name=" + $("#name").val() + "&age=" + $("#age").val();
+				alert(op);
+});
+
+
+$("#reset").click(function () {
+				$("#name").val('');
+				$("#age").val('');
+				$("#birthpreference").val('');
+			});
+
+
+
+});
+
+</script>
+<style>
+form { text-align : center;}
+legend { text-align : center ;}
+</style> 
+<br><legend><h1><b>TRAIN TICKET RESERVATION<b></h1></legend><br><br>
+<form> 
+
+
+<label> NAME           : </label>
+<input type ="text" id="name"></input><br><br>
+<label> AGE            : </label>
+<input type ="text" id="age"></input><br><br>
+<label> BERTH PERFERENCE : </label>
+<input type ="text" id="birthpreference"></input><br><br>
+
+
+<input type ="button" id="reset" value = "RESET"></input>
+<input type ="button" id = "submit" value ="submit"></input>
+
+</form>
+
